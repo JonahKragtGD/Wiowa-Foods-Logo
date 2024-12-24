@@ -35,12 +35,9 @@ body::-webkit-scrollbar-thumb {
 }
 .container {
 
-    padding: 20px 20px 20px 100px;
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    align-content: space-evenly;
   }
 
 html {
@@ -48,7 +45,13 @@ html {
   color: #fff;
 }
 section {
-  padding: 50px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  margin: auto;
 }
 header {
   position: fixed;
@@ -146,7 +149,9 @@ header {
     font-weight: 600;
     border-bottom: 2px solid var(--primary);
   }
-  
+  .contact {
+    flex-direction: column;
+  }
   
   .contact-content {
     display: flex;
